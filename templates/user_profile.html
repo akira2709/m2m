@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <a href="#">
+        Пополнить баланс
+    </a><br>
+    <a href="/logout">
+        Logout
+    </a><br>
+    <a href="/">
+        Back
+    </a>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <table>
+            <tr>
+                <td>Стоимость в коинах:</td>
+                <td><input type="number" name="cost" id="cost" min="1" max="1000" style="color: black !important;"></td>
+            </tr>
+            <tr>
+                <td>Описание:</td>
+                <td><input type="text" name="descr" id="descr"></td>
+            </tr>
+            <tr>
+                <td>Твой класс:</td>
+                <td><input type="number" name="class_number" id="class_number" min="6" max="11" style="color: black !important;"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+           <p>Предмет:<select name="subject" id="subject">
+               <option value="ВТЭК">ВТЭК</option>
+               <option value="Программирование">Программирование</option>
+               <option value="Алгебра">Алгебра</option>
+               <option value="Физика">Физика</option>
+               <option value="Геометрия">Геометрия</option>
+               <option value="Химия">Химия</option>
+               <option value="Русский язык">Русский язык</option>
+               <option value="Английский язык">Английский язык</option>
+               <option value="Экономика">Экономика</option>
+               <option value="Пракмат">Пракмат</option>
+           </select></p>
+        </table>
+    </form>
+</body>
+</html>

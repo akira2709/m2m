@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>subject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/css/subject.css">
+</head>
+<body>
+<noscript id="c">{{ changer }}</noscript>
+<noscript id="object">{{ object }}</noscript>
+<button id="btn_back">BACK</button>
+    <header>
+        <button id="btn1">orders</button>
+        <b>/</b>
+        <button id="btn2">offers</button>
+    </header>
+    <h6>{{ object }}</h6>
+    {% if changer == 0 %}
+        <h6>buy homework</h6>
+    {% else %}
+        <h6>do an order</h6>
+    {% endif %}
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.scrolly.min.js"></script>
+    <script src="/static/js/jquery.scrollex.min.js"></script>
+    <script src="/static/js/browser.min.js"></script>
+    <script src="/static/js/breakpoints.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/subject.js"></script>
+</body>
+</html>

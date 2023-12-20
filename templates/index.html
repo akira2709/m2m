@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/index.css" />
+        <script src="../static/js/jquery.min.js" defer></script>
+        <script src="../static/js/jquery.scrolly.min.js" defer></script>
+        <script src="../static/js/jquery.scrollex.min.js" defer></script>
+        <script src="../static/js/browser.min.js" defer></script>
+        <script src="../static/js/breakpoints.min.js" defer></script>
+        <script src="../static/js/util.js" defer></script>
+        <script src="../static/js/main.js" defer></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="/" class="logo"><strong>me2me</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="/">Home</a></li>
+						</ul>
+						<ul class="actions stacked">
+                            {% if current_user.is_authenticated %}
+                                <li><a href="/user_profile" class="button fit">Profile</a></li>
+                            {% else %}
+							    <li><a href="https://t.me/dfgvcxz_bot?start=1" class="button fit" target="_blank">Authorise</a></li>
+                            {% endif %}
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+                    <section id="banner" class="major" style="background-position: center -25.3px;">
+						<div class="inner">
+							<header class="major">
+								<h1>Something</h1>
+							</header>
+							<div class="content">
+								<p>something about us</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/geometry" class="link">Geometry</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/algebra" class="link">Algebra</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/physics" class="link">Physics</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/russian" class="link">Russian language</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/informatics" class="link">Informatics</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="../static/images/i1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="/subject/0/chemistry" class="link">Chemistry</a></h3>
+										<p>Quantity of advertisements</p>
+									</header>
+								</article>
+							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+	</body>
+</html>
